@@ -1,0 +1,25 @@
+.account-container{
+    width: 300px;
+    height: 100%;
+    background-color: green;
+    color: blue;
+    z-index: 7;
+    position: absolute;
+    right: 0px;
+    animation: side-left 2s;
+}
+
+@keyframes side-left {
+    from {width:0px}
+    to {width:300px}
+}
+
+/* .cls-account{
+    animation: side-right 2s;
+}
+
+
+@keyframes side-right {
+    from {width:300px}
+    to {width:0px}
+} */

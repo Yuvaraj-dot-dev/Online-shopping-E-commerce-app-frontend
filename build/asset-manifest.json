@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.562de23d.css",
+    "main.js": "/static/js/main.316c9e7d.js",
+    "static/media/shopping-apps.jpg": "/static/media/shopping-apps.187de7b8bc531adbe194.jpg",
+    "static/media/edge50fusion.webp": "/static/media/edge50fusion.d47b8c998a20bbd9e8f4.webp",
+    "static/media/samsung-a14-5g-original-imah4sssfvvahchb.webp": "/static/media/samsung-a14-5g-original-imah4sssfvvahchb.a439ee4c96bbb9421b14.webp",
+    "static/media/vivo-v40-5g-original-imah3hvkuw8k7hcw.webp": "/static/media/vivo-v40-5g-original-imah3hvkuw8k7hcw.fb9d9fe4dd643458ea1e.webp",
+    "static/media/oneplus-12r-original-imagy5wgrbhhbhst.webp": "/static/media/oneplus-12r-original-imagy5wgrbhhbhst.246e1d289a79b2d4e670.webp",
+    "static/media/google-pixlel-7a-original-imagpgx4g2m63gfh.webp": "/static/media/google-pixlel-7a-original-imagpgx4g2m63gfh.b04e261df689a80f5184.webp",
+    "index.html": "/index.html",
+    "main.562de23d.css.map": "/static/css/main.562de23d.css.map",
+    "main.316c9e7d.js.map": "/static/js/main.316c9e7d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.562de23d.css",
+    "static/js/main.316c9e7d.js"
+  ]
+}

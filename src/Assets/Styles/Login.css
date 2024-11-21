@@ -1,0 +1,96 @@
+.login-sec .username, .password{
+    font-size: 20px;
+    font-weight: 400;
+    /* margin-bottom: 10px; */
+    color: #333;
+}
+.login-sec .login-input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #09a5ee;
+    accent-color: 2px solid #09a5ee;
+    caret-color: #09a5ee;
+    width: calc(100% - 24px);
+}
+.login-sec .signin-btn{
+    font-size: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    border: 2px solid #09a5ee;
+    color: #09a5ee;
+    border-radius: 25px;
+    margin: 20px auto;
+}
+.login-sec{
+    display: flex;
+    height: 100dvh;
+}
+.login-sec .left-container{
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+.login-sec .right-container{
+    width: 50%;
+    height: 100vh;
+}
+.login-sec form{
+    padding: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: fit-content;
+    border: 2px solid #09a5ee;
+    border-radius: 25px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.login-sec .username, .login-sec .password{
+    margin-bottom: 20px;
+}
+.login-sec .input-chk-box{
+    accent-color: #09a5ee;
+    width: fit-content;
+    margin: 0px 5px 0px 0px;
+}
+.login-sec .chk-box-prnt{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-sec .chk-label{
+    font-size: 16px;
+}
+.login-sec .chk-remember{
+    display: flex;
+    align-items: center;
+}
+.login-sec .forget-psw{
+    font-size: 16px;
+}
+
+@media only screen and (0px < width < 425px){
+    
+}
+
+@media only screen and (0px < width < 768px){
+    .login-sec .left-container{
+        width: 100%;
+    }
+    .login-sec .right-container{
+        display: none;
+    }
+    .login-sec form{
+        border: 0px;
+        box-shadow: none;
+    }
+}
