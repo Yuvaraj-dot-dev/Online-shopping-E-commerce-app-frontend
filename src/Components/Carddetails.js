@@ -11,7 +11,7 @@ const Carddetail = () => {
   let {name} = useParams();
   // const dataCart = useContext(detailscontext);
   // console.log(typeof dataCart);
-    const product = data.find(product=>String(product.name) === name)
+    const product = data.find(product=>(product.name) === name)
     const discountPrice = product.originalprice - (product.percentage * product.originalprice) / 100;
         return  (<>
         <Header />

@@ -1,96 +1,155 @@
-.login-sec .username, .password{
-    font-size: 20px;
-    font-weight: 400;
-    /* margin-bottom: 10px; */
-    color: #333;
-}
-.login-sec .login-input{
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-weight: 500;
-    font-size: 16px;
-    border: 2px solid #09a5ee;
-    accent-color: 2px solid #09a5ee;
-    caret-color: #09a5ee;
-    width: calc(100% - 24px);
-}
-.login-sec .signin-btn{
-    font-size: 16px;
-    margin-top: 10px;
-    text-decoration: none;
-    padding: 10px;
-    width: 150px;
-    cursor: pointer;
-    border: 2px solid #09a5ee;
-    color: #09a5ee;
-    border-radius: 25px;
-    margin: 20px auto;
-}
-.login-sec{
-    display: flex;
-    height: 100dvh;
-}
-.login-sec .left-container{
-    width: 50%;
+.login-container{
     display: grid;
     place-items: center;
+    height: 100dvh;
 }
-.login-sec .right-container{
-    width: 50%;
-    height: 100vh;
-}
-.login-sec form{
-    padding: 20px;
-    width: fit-content;
+.login-form{
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    height: fit-content;
+    width: 700px;
     border: 2px solid #09a5ee;
     border-radius: 25px;
-    backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease-in-out;
+    /* padding: 20px; */
 }
-.login-sec .username, .login-sec .password{
-    margin-bottom: 20px;
+.login-form .left-form{
+    width: calc(50% - 60px);
+    padding: 30px;
 }
-.login-sec .input-chk-box{
-    accent-color: #09a5ee;
-    width: fit-content;
-    margin: 0px 5px 0px 0px;
+.login-form .right-content{
+    width: 50%;
+    background-color:  #09a5ee;
+    border-radius: 0px 20px 20px 0px;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.login-sec .chk-box-prnt{
-    width: 100%;
+.login-form label{
+    font-size: 18px;
+}
+/* .signup-container form{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+} */
+.login-container .login-input{
+    height: 20px;
+    width: 265px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: gray;
+    padding: 10px;
+    /* border: none;
+    outline: none; */
+    margin: 10px 0px 20px 0px;
+    font-weight: 500;
+    border: 2px solid #09a5ee;
+}
+.chk-box-prnt{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
-.login-sec .chk-label{
+.input-chk-box{
+    width: 16px;
+    height: 16px;
+}
+.login-btn{
+    border: 2px solid #000;
+    color: #fff;
+    /* padding: 5px 10px; */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 273px;
+    height: 43px;
+    background-color: #000;
+}
+.or{
+    display: grid;
+    grid-template-columns: 6fr 1fr 6fr;
+    /* height: 20px; */
+    align-items: center;
+    width: 273px;
+    justify-content: center;
+    text-align: center;
+}
+.left-or, .right-or{
+    border: 1px solid #000;
+}
+.l-w-g-btn, .l-w-f-btn{
+    width: 273px;
+    height: 43px;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-size: 16px;
-}
-.login-sec .chk-remember{
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #fff;
 }
-.login-sec .forget-psw{
-    font-size: 16px;
+.l-w-g-btn{
+    border: 1px solid gray;
+    /* background-color: #dff2ff; */
 }
-
-@media only screen and (0px < width < 425px){
-    
+.l-w-f-btn{
+    margin: 15px 0px;
+    border: 1px solid grey;
 }
-
+.FcGoogle{
+    /* width: 20px;
+    height: 20px; */
+    font-size: 25px;
+    margin-right: 10px;
+}
+.FaSquareFacebook{
+    font-size: 20px;
+    color: blue;
+    margin-right: 10px;
+}
+.m-g-f{
+    display: none;
+    justify-content: center;
+}
 @media only screen and (0px < width < 768px){
-    .login-sec .left-container{
-        width: 100%;
+    /* .signup-container {
+        display: block;
+    } */
+    .login-container .left-form{
+        width: fit-content;
     }
-    .login-sec .right-container{
+
+    .login-container .right-content{
         display: none;
     }
-    .login-sec form{
-        border: 0px;
-        box-shadow: none;
+    .login-container .login-form{
+        border: none;
+        width: fit-content;
+        display: block;
+    }
+    .l-w-g-btn, .l-w-f-btn{
+        display: none;
+    }
+    .login-container .m-g-f{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .m-g-f .FcGoogle, .m-g-f .FaSquareFacebook{
+        margin: 0px;
+    }
+    .m-g-f button{
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid  gray;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
     }
 }

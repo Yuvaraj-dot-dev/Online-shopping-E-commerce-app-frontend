@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect, useState} from "react";
 import "../Assets/Styles/style.css";
 // import { Link } from "react-router-dom";
 // import { CiHeart } from "react-icons/ci";
@@ -18,9 +18,12 @@ import Header from "./Header";
 // import SignUp from "./Signup";
 
 const Card = (props) => {
+  
   const navigate = useNavigate();
   useEffect(() => {
   }, []);
+
+
   
   // const dataList = data.sort(() => Math.random() - 0.5);
   const myDatas =
@@ -122,7 +125,8 @@ const Card = (props) => {
       const addcartHandler = () => {
         // props.loginState ? window.location.href="./Login.js" : props.addToCart(item)
         // props.addToCart(item) 
-        navigate("/Login")
+        console.log("props.userData",props.userData);
+        props.userData ? console.log("user Logged") : navigate("/Login");
       }
 
       
@@ -196,6 +200,7 @@ const mapStateToProps = (state) => {
   return {
     cartData: state.cartReducer.cartData,
     search: state.cartReducer.search,
+    userData: state.cartReducer.userData
   }
 }
 

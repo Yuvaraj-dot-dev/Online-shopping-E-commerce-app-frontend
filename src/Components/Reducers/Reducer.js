@@ -1,8 +1,9 @@
 const initialState = {
     cartData: [],
     quantity: 1,
-    signup : [],
-    search: ""
+    login : [],
+    search: "",
+    userData: []
 }
 
 
@@ -32,9 +33,13 @@ const cartReducer = (state = initialState, action) => {
         case "LOGIN_STATE" :
             return {
                 ...state,
-                signup: [...state.signup,  {...action.payload} ]
+                login: [...state.login,  {...action.payload} ]
            }
-            case "LOGOUT":
+        case "USER_DATA" : 
+            return {
+                ...state,
+                userData: [...state.userData,  ...action.payload ]
+            }
                 default:
                     return state;
 

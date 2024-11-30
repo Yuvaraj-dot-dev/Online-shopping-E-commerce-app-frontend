@@ -13,9 +13,10 @@ import { onSearch } from "./Actions/Action";
 
 const Header = (props) => {
   const [account, setAccount] = useState(false);
-  const [accountDetails, setAccountDetails] = useState(props.signup);
+  // const [accountDetails, setAccountDetails] = useState(props.login);
+  const [userDetail,setUserDetail] = useState(props.userData);
   // setAccountDetails(props.signup)
-  const arr = accountDetails && accountDetails.map((item) => {
+  const arr = userDetail && userDetail.map((item) => {
     return <>
     <span>{item.Name}</span>
     <span>{item.Email}</span>
@@ -74,8 +75,9 @@ const onSearchText = (event) => {
         {/* <span>{props.loginState.name}</span> */}
         <span>{arr}</span>
 
-        {console.log("props.signup",props.signup)}
+        {console.log("props.signup",props.login)}
         {console.log("props.cartData",props.cartData)}
+        {console.log("props.userData",props.userData)}
         </div>}
     </header>
   );
@@ -84,8 +86,9 @@ const onSearchText = (event) => {
 
 const mapStateToProps = (state) => {
   return {
-    signup: state.cartReducer.signup,
+    login: state.cartReducer.login,
     search: state.cartReducer.search,
+    userData: state.cartReducer.userData
   };
 }
 

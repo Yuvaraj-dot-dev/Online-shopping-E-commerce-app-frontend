@@ -34,3 +34,10 @@ export const loginState = (value) => {
         payload: value
     }
 }
+
+export const userData = (value) => {
+    return {
+        type: 'USER_DATA',
+        payload: value
+    }
+}

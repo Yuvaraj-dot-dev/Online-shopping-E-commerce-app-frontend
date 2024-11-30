@@ -5,7 +5,6 @@ import { bindActionCreators } from "redux";
 import { increment, removeFromCart } from "./Actions/Action";
 import Header from "./Header";
 
-
 const Cart = (props) => {
 
   console.log("cart",props.cartData)
